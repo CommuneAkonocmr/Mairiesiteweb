@@ -9,28 +9,14 @@ html {
 }
 /* -----------------HEADER----------------------- */
 
-header {
+header #banniere img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 	width: 100%;
-}
-header img {
-	width: 5%;
+
 
 }
-
-header img, #titre{
-	display: inline-block;
- position: relative;
-}
-header #titre {
-	width: 80%;
-	position: absolute;
-	
-}
-header #titre h1{
-	text-align: center;
-	vertical-align: center;
-}
-
 
 /* -----------------FIN DU HEADER----------------------- */
 
@@ -47,6 +33,7 @@ nav #menu {
 nav #menu ul {
  list-style-type:none;
  display: inline-block;
+
 }
 
 nav #menu li {
@@ -59,7 +46,7 @@ nav #menu li a {
  width:175px;
  color:white;
  text-decoration:none;
- padding: 1em;
+ padding: .55em;
  text-align: center;
  }
 
@@ -88,15 +75,18 @@ nav #menu li ul {
  }
 
  /* -----------------FIN DU MENU----------------------- */
- body #content p{
-	text-overflow:hidden;
+
+ body #content {
+	margin:  2em;	
+	border: solid lightgrey;
+	padding: 0em 1em 0em 1em;
 }
+
  body {
 	margin: 0;
 	padding: 0;
 	position: relative;
 	padding-bottom: 100px;
-	width: 100%;
 	min-height: 100%;
 }
 
@@ -146,4 +136,58 @@ footer #footer #ouverture h2{
 }
 
 /*--------------------FIN DU FOOTER-------------------------*/
-	
+/*--------------------POUR LES ELUS-------------------------*/
+
+.container {
+  position: relative;
+  width: 15%;
+  	display:inline-block;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  height: 100%;
+  opacity: 50%;
+}
+
+.text {
+  white-space: nowrap; 
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+
+#elus{
+width:100%;
+background-color: yellow;
+}
+#elus img{
+width: 100%;
+}
+#elus div{
+	text-align: center;
+}
+/*--------------------FIN DU CODE POUR LES ELUS-------------------------*/
