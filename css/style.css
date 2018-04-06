@@ -1,0 +1,149 @@
+
+
+/*
+position: sticky;
+top: 20px;
+*/
+html {
+  height: 100%;
+}
+/* -----------------HEADER----------------------- */
+
+header {
+	width: 100%;
+}
+header img {
+	width: 5%;
+
+}
+
+header img, #titre{
+	display: inline-block;
+ position: relative;
+}
+header #titre {
+	width: 80%;
+	position: absolute;
+	
+}
+header #titre h1{
+	text-align: center;
+	vertical-align: center;
+}
+
+
+/* -----------------FIN DU HEADER----------------------- */
+
+/* -----------------MENU----------------------- */
+nav #menu {
+	background-color: black;
+	width: auto;
+}
+
+#menu{
+	background-color: black;
+}
+
+nav #menu ul {
+ list-style-type:none;
+ display: inline-block;
+}
+
+nav #menu li {
+ display: inline-block;
+ background-color:black;
+ }
+
+nav #menu li a {
+ display:block;
+ width:175px;
+ color:white;
+ text-decoration:none;
+ padding: 1em;
+ text-align: center;
+ }
+
+nav #menu li a:hover {
+ color:white;
+ background-color: #666666;
+ }
+
+ nav #menu ul li ul {
+ display:none;
+ width: 100%;
+ }
+
+nav #menu ul li:hover ul {
+ display:block;
+ margin-left: -40px;
+ width:12%;
+ }
+/*
+nav #menu li:hover ul li {
+/* float:none;
+ }*/
+
+nav #menu li ul {	
+ position:absolute;
+ }
+
+ /* -----------------FIN DU MENU----------------------- */
+ body #content p{
+	text-overflow:hidden;
+}
+ body {
+	margin: 0;
+	padding: 0;
+	position: relative;
+	padding-bottom: 100px;
+	width: 100%;
+	min-height: 100%;
+}
+
+
+/*--------------------FOOTER-------------------------*/
+footer #footer{
+	background-color: lightgrey;
+	bottom: 0;
+	width: 100%;
+	border-top-style:solid; 
+	/*position: fixed;*/
+	position: absolute;
+	font-size: 12px;
+}
+
+footer #footer #ouverture , #contact , #copyright{
+	display: inline-block;
+	width: 33%;
+	vertical-align: center;
+}
+
+footer #footer #ouverture , #contact{
+	text-align: center;
+}
+
+footer #footer #copyright{
+	text-align: right;
+}
+
+footer #footer #ouverture , #contact p{
+	margin-top: 0px;
+}
+
+footer #footer #ouverture p{
+	margin-bottom:0px;
+	margin-top: 0px;
+}
+
+footer #footer #contact p{
+	margin-bottom:0px;
+	margin-top: 0px;
+}
+
+footer #footer #ouverture h2{
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+/*--------------------FIN DU FOOTER-------------------------*/
+	
