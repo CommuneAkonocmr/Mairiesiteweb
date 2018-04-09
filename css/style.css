@@ -7,6 +7,13 @@ top: 20px;
 html {
   height: 100%;
 }
+
+
+a:visited {
+
+	color: blue;
+
+}
 /* -----------------HEADER----------------------- */
 
 header #banniere img {
@@ -41,7 +48,6 @@ nav #menu li {
  }
 
 nav #menu li a {
-
  display:block;
  width:175px;
  color:black;
@@ -137,6 +143,64 @@ footer #footer #ouverture h2{
 }
 
 /*--------------------FIN DU FOOTER-------------------------*/
+/*--------------------ACCUEIL-------------------------*/
+#photomrmaire{
+	width: 25%;
+
+}
+#photomrmaire img{
+	width: 100%;
+
+}
+#motdumaire{
+	padding: 1em;
+	width: 70%;
+	vertical-align: top;
+}
+
+#avenir{
+	margin-top: 1em;
+	padding: 1em;
+	width: 16%;
+	border: solid;
+	vertical-align: top;
+}
+ #photomrmaire, #motdumaire, #avenir{
+
+ 	display: inline-block;
+ }
+
+ #mairie #coordonnees {
+ 	width: 29%;
+ 	vertical-align: top;
+ }
+ #mairie {
+ 	padding-top:3em;
+
+ }
+
+ #mairie iframe{
+ 	width: 70%;
+ }
+
+ #mairie #coordonnees , iframe{
+display: inline-block;
+ }
+
+ #accueilgauche{
+ 	width: 80%;
+ }
+
+ #accueilgauche, #avenir{
+ 	display: inline-block;
+ }
+
+ #mairie #coordonnees div p{
+ 	margin: 0;
+
+ }
+
+/*--------------------ACCUEIL-------------------------*/
 /*--------------------POUR LES ELUS-------------------------*/
 
 .container {
@@ -198,7 +262,7 @@ width: 100%;
 }
 /*--------------------FIN DU CODE POUR LES ELUS-------------------------*/
 /*----------------------- RESULTAT ELECTIONS-----------------*/
-#resultatelection1 p,img{
+#resultatelection1 p,#resultatelection1 img{
 display: inline-block;
 vertical-align: top;
 }
@@ -214,8 +278,6 @@ vertical-align: top;
 }
 #resultatelection1{
 	margin: 1em;
-
-
 }
 #resultatelection2 table
 {
@@ -230,14 +292,15 @@ vertical-align: top;
 	height: 50px;
 }
 
-#resultatelection2 div {
-
-}
 #resultatelection2 {
 	width: 100%;
 	text-align: center;
-
 }
+
+#resultatelection2 th{
+background-color: grey;
+}
+
 
 /*-----------------------FIN RESULTAT ELECTIONS-----------------*/
 /*-----------------------ANNUAIRE-----------------*/
@@ -246,20 +309,56 @@ vertical-align: top;
 {
     border-collapse: collapse;
     text-align: center;
-    margin-left:auto;
-	margin-right: auto;
+/*    margin-left:auto;
+	margin-right: auto;*/
+	width: 100%;
 }
 #annuaire th,tr,td{
 	border: 1px solid black;
-	width: 10%;
+	width: 30%;
 	height: 50px;
 }
 
-#annuaire div {
-
-}
 #annuaire {
 	width: 100%;
 	text-align: center;
+	
+}
 
+#annuaire th{
+
+ background-color: grey;
+
+}
+
+#annuaire td,tr{
+	background-color:lightgrey; 
+}
+
+#utile {
+
+	width: auto;
+	margin-bottom: 2em;
+}
+ 
+
+#utile img{
+	width: 75%;
+		padding-bottom: 5px;
+
+}
+/*-----------------------FIN ANNUAIRE-----------------*/
+/*-----------------------CA2BM-----------------*/
+
+#logoca2bm{
+width:auto ;
+text-align: center;
+}
+
+#coordonneesca2bm p{
+ 	margin: 0;
+}
+
+#carteca2bm, #communes{
+	
 }
